@@ -1,0 +1,51 @@
+/************
+Color Mixer:
+The colors red, blue, and yellow are known as the primary colors because they cannot be made by mixing other colors.
+When you mix two primary colors, you get a secondary color, as shown here: 
+
+- When you mix red and blue, you get purple
+- When you mix red and yellow you get orange.
+- When you mix blue and yellow, you get green. 
+
+Design a program that prompts the user to enter the names of two primary colors to mix.  if the user enters anything other than "red," "blue," or "yellow," the program should display an error message.  Otherwise, the program should display the name of the secondary color that results. 
+*************/
+
+Pseucod Code: 
+Module main() 
+                     
+	Declare String firstColor
+	Declare String secondColor
+
+	Display "Enter your first color: " 
+	Input firstColor
+
+	Display "Enter your second color: " 
+	Input secondColor
+
+	Call  calculateSecondaryColor(String Val firstColor, String Val secondColor, String Ref newColor) 
+
+End Module()
+
+
+Call  calculateSecondaryColor(String Val firstColor, String Val secondColor, String Ref newColor) 
+
+Declare String newColor
+
+If firstColor == red AND secondColor == blue Then
+	Set newColor = purple
+	Display "You Get: ", newColor 
+	Else 
+		if firstColor == red AND secondColor == yellow Then 
+			Set newColor = orange
+			Display "You get: ", newColor 
+		Else
+			if firstColor == blue AND secondColor = yellow Then
+				Set newColor = green
+				Display "You Get: ", newColor 
+			Else
+				Display "Error"
+			End If
+		End If 
+	End If
+End if 	
+End Module() 
