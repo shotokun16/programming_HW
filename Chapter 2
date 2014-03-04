@@ -1,0 +1,38 @@
+/***********
+Celsius to Fahrenheit Tempearature Converter: 
+Design a program that converts Celsius temperatures to Fahrenheit temperatures. The formula is as follows: 
+F = (9/5)C + 32 
+The program should ask the user to enter a temperature in Celsius, and then display the tempereature converted to Fahrenheit
+************/ 
+
+/*Pseudo
+
+Start 
+Declare integer userTemp
+Declare integer convert  
+
+Display "What is the temperature(C): "
+input userTemp 
+Set convert = ((userTemp) * 9/5) + 32
+Display "The Temperature in Fahrenheit is: ", convert
+End 
+*/
+
+#include <iostream> 
+#include  "conio.h"
+
+using namespace std; 
+int main()
+{
+	
+	double userTemp;
+	double convert;
+	cout << "What is the temperature: " ; 
+	cin >> userTemp;
+	convert = ((userTemp * 9)/5) + 32; 
+	cout << "The Temperature in Fahrenheit is: " << convert << endl;
+	system("pause");
+
+	return 0; 
+
+}
