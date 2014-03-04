@@ -31,15 +31,15 @@ Call  calculateSecondaryColor(String Val firstColor, String Val secondColor, Str
 
 Declare String newColor
 
-If firstColor == red AND secondColor == blue Then
+If ((firstColor == red) AND (secondColor == blue)) Then
 	Set newColor = purple
 	Display "You Get: ", newColor 
 	Else 
-		if firstColor == red AND secondColor == yellow Then 
+		if ((firstColor == red) AND (secondColor == yellow)) Then 
 			Set newColor = orange
 			Display "You get: ", newColor 
 		Else
-			if firstColor == blue AND secondColor = yellow Then
+			if ((firstColor == blue) AND (secondColor = yellow)) Then
 				Set newColor = green
 				Display "You Get: ", newColor 
 			Else
